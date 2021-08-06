@@ -134,7 +134,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div>Teachable Machine Image Model</div>
+        <div className="titlemachine">Teachable Machine Image Model</div>
         <button type="button" onClick={() => init()}>
           Start
         </button>

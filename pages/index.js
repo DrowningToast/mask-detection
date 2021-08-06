@@ -135,12 +135,24 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className="titlemachine">Teachable Machine Image Model</div>
+        <div
+          ref={webcamContainer}
+          className="webcam"
+          id="webcam-container"
+        ></div>
+        <div
+          ref={labelContainer}
+          className="labelContainer"
+          id="label-container"
+        ></div>
+        <div
+          ref={faceContainer}
+          className="labelContainer"
+          id="facec-contianer"
+        ></div>
         <button type="button" onClick={() => init()}>
           Start
         </button>
-        <div ref={webcamContainer} id="webcam-container"></div>
-        <div ref={labelContainer} id="label-container"></div>
-        <div ref={faceContainer} id="facec-contianer"></div>
       </main>
     </div>
   );

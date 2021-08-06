@@ -25,6 +25,7 @@ export default function Home() {
       probability,
     });
     return new Promise((resolve, reject) => {
+      // console.log(response);
       if (response) resolve(response);
       reject("error has been occured");
     });
@@ -104,8 +105,8 @@ export default function Home() {
         maskStatusPrediction = predict.className;
         sendInfo(predict)
           .then((res) => {
-            console.log(res);
-            alert(res);
+            // console.log(res);
+            alert(res.data.reply);
           })
           .catch((err) => {
             alert(err);
